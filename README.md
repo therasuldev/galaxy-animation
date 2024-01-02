@@ -2,6 +2,7 @@
 
 The Galaxy Animation Flutter package provides an engaging way to display an animated galaxy-like structure in your Flutter applications. This package uses custom painting to create dynamic, rotating planets and orbits.
 
+https://github.com/therasuldev/galaxy-animation/assets/74558294/3d5796d0-f4df-49ca-b538-6603957b04c9
 
 
 ## Features

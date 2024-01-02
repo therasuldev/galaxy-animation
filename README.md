@@ -1,39 +1,67 @@
-<!--
-This README describes the package. If you publish this package to pub.dev,
-this README's contents appear on the landing page for your package.
+# Galaxy Animation
 
-For information about how to write a good package README, see the guide for
-[writing package pages](https://dart.dev/guides/libraries/writing-package-pages).
+The Galaxy Animation Flutter package provides an engaging way to display an animated galaxy-like structure in your Flutter applications. This package uses custom painting to create dynamic, rotating planets and orbits.
 
-For general information about developing packages, see the Dart guide for
-[creating packages](https://dart.dev/guides/libraries/create-library-packages)
-and the Flutter guide for
-[developing packages and plugins](https://flutter.dev/developing-packages).
--->
 
-TODO: Put a short description of the package here that helps potential users
-know whether this package might be useful for them.
 
 ## Features
+**Dynamic Galaxy Animation**
+- Animates planets rotating around orbits with customizable colors and sizes.
+**Customizable Appearance**
+- Allows customization of the orbit and planet colors to fit the theme of your application.
+**Smooth Animations**
+- Utilizes Flutter's animation framework for smooth and efficient rendering.
 
-TODO: List what your package can do. Maybe include images, gifs, or videos.
 
-## Getting started
 
-TODO: List prerequisites and provide or point to information on how to
-start using the package.
+## Installation
+
+To use this package, add **multi_link_text** as a dependency in your `pubspec.yaml` file.
+
+```bash
+dependencies:
+  flutter:
+    sdk: flutter
+  galaxy_animation: ^0.0.1  # Use the latest version
+```
+‼️ Then run the following commands to fetch the package and update your project:
+```bash
+flutter pub get
+```
+
 
 ## Usage
 
-TODO: Include short and useful examples for package users. Add longer examples
-to `/example` folder.
 
 ```dart
-const like = 'sample';
+import 'package:flutter/material.dart';
+import 'package:galaxy_animation/galaxy_animation.dart';
+
+void main() {
+  runApp(const MyApp());
+}
+
+class MyApp extends StatelessWidget {
+  const MyApp({Key? key}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      title: 'Galaxy Animation Demo',
+      home: Scaffold(
+        appBar: AppBar(
+          title: const Text('Galaxy Animation'),
+        ),
+        body: const Center(
+          child: GalaxyAnimation(),
+        ),
+      ),
+    );
+  }
+}
+
+
 ```
 
-## Additional information
-
-TODO: Tell users more about the package: where to find more information, how to
-contribute to the package, how to file issues, what response they can expect
-from the package authors, and more.
+## Contributing
+Contributions are welcome! Please feel free to submit issues and pull requests.

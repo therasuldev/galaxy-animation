@@ -1,6 +1,6 @@
 name: galaxy_animation
 description: "The Galaxy Animation Flutter package provides an engaging way to display an animated galaxy-like structure in your Flutter applications."
-version: 0.0.1
+version: 0.0.2
 homepage: https://github.com/therasuldev/galaxy-animation
 
 environment:
